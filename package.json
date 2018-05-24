@@ -20,6 +20,13 @@
     "body-parser": "^1.18.3",
     "express": "^4.15.4",
     "mysql2": "^1.5.3",
-    "sequelize": "^4.37.8"
+    "sequelize": "^4.37.8",
+    "crypto-fetch": "0.0.3",
+    "cryptocompare": "^0.5.0",
+    "express-handlebars": "^3.0.0",
+    "moment": "^2.22.1",
+    "node-fetch": "^2.1.2",
+    "yahoo-finance": "^0.3.5",
+    "node-mailer": "^0.1.1"
   }
 }

@@ -1,18 +1,38 @@
-# SERN-boilerplate
+# Personal-Financial-App
 
-Sequelize, Express, React, Node.js
 
-React.js and server run concurrently. Built for easy deployment.
+## About
+An elegant, visually appealing way to display expenses and personal investments.
 
-'yarn install' in main folder and inside client before running with 'yarn start' in main folder.
+Search for stocks and crypto currencies to get their values in real time and display your investments in an interactive pi-chart.
 
-Run yarn build inside of client before deploying.
+Store your expenses in an interactive pi-chart with drilldown functionality.
 
-Configure db/config/config.json to local specifications
+Unique, persistent data for each user.
 
-Sequelize does not create the initial database.  If running locally run these two lines of code into mysql workbench before starting server:
 
-DROP database IF EXISTS database_name;
-CREATE DATABASE database_name;
+## Motivation
+Create a project that demonstrates a multitude of technologies available for full stack applications. 
 
-db/models/user.js contains code of an example sequelize model.
+Display crypto currencies with value and cost basis in U.S. dollars.
+
+
+## Live Link 
+
+https://personal-financial-app.herokuapp.com/
+
+
+## Technologies Used
+HTML, CSS, Bootstrap, JavaScript, jQuery, Handlebars.js, APIs, JSON, MySQL, Sequelize, Node.js
+
+API's used:
+Node-mailer, yahoo-finance, cryptocompare
+
+## Collaborators 
+Eric Trautmiller    
+
+Martin Guldberg
+
+Hassan Nish
+
+Swapna Kathula
