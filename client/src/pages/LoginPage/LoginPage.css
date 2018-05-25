@@ -1,0 +1,136 @@
+/* body {
+    background-image: url("../../images/loginbackground.jpg");
+    background-repeat: no-repeat;
+} */
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px 2px yellow;
+
+}
+
+h1,
+h3,
+.card-body {
+    color: black;
+}
+
+#sign-in-card {
+    background-color: rgb(159, 212, 253);
+}
+
+#cd1 {
+    background-color: rgb(159, 212, 253);
+}
+
+#cd2 {
+    background-color: rgb(159, 212, 253);
+}
+
+#cd3 {
+    background-color: rgb(159, 212, 253);
+}
+
+input:hover {
+    background: rgb(177, 221, 233);
+}
+
+button {
+    border-color: rgb(64, 136, 136)!important;
+    background-color: rgb(214, 238, 240);
+}
+
+
+
+body {
+    line-height: 30px;
+    background-image: url("../../images/pw_maze_white.png");
+    width: 100%;
+    padding: 0px;
+    margin: auto 0;
+    overflow: auto;
+
+}
+
+#password2 {
+    margin-bottom: 20px;
+}
+
+.sign-up-button1 {
+    float: right;
+}
+
+body {
+    font-family: 'Ariel', sans-serif !important;
+
+}
+
+#submit2 {
+    margin-top: 20px;
+}
+
+.card {
+    border-color: black;
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.form-control {
+    border-style: solid;
+    border-width: 2px;
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+
+#jumbotron2 {
+    background-image: url("../../images/what-is-the-stock-market-1024x321.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid;
+    top: 15px;
+    border-color: black;
+
+
+}
+
+#jumbotron1 {
+    background-image: url("../../images/Personal-Finance.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px solid;
+    top: 15px;
+    border-color: black;
+}
+
+.side-card {
+    font-size: 20px;
+}
+
+.card-img-top{
+    height: 150px;
+}
+
+@media screen and (max-width: 790px) {
+    .small-screen {
+        display: none;
+    }
+
+    .row{
+        display: block;
+    }
+}
