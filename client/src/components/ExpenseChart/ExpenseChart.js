@@ -5,7 +5,7 @@ import Highcharts from "highcharts"
 import HighchartsReact from 'highcharts-react-official'
 
 const ExpenseChart = props => (
-<div>
+<div className="card">
   <HighchartsReact 
     highcharts={Highcharts}
     options={{
