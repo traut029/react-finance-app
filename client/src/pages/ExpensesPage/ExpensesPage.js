@@ -11,7 +11,7 @@ import ExpensesForm from "../../components/ExpensesForm";
 import ExpenseTable from "../../components/ExpenseTable";
 import ErrorModal from "../../components/ErrorModal";
 
-class ExpensesPage extends Component {
+class ExpensesPage extends React.Component {
     state = {
         test: [
             {
@@ -65,6 +65,7 @@ class ExpensesPage extends Component {
                     </h4>
                     <hr class="my-4"></hr>
                 </Jumbotron>
+      
                 <Row>
                     <Col size="md-4">
                         <ExpensesForm />

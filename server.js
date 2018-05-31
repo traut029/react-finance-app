@@ -4,8 +4,35 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const bodyParser = require("body-parser");
 
+var passport   = require('passport')
+var session    = require('express-session')
+var async = require('async');
+var crypto = require('crypto');
+var nodemailer = require('nodemailer');
+
 //Require models
 var models=require("./models")
+
+////////////////////////////////////////////////////////////////////////////
+// START PASSPORT
+// The order of the passport server lines is important - no step on snek 
+////////////////////////////////////////////////////////////////////////////
+// Note that process.env.sessionsecret is a variable that I configured Heroku for to keep it out of github for security issues, otherwise it can be any random string. -Mark
+app.use(session({ secret: "test"})); // session secret
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
+
+// Routes for authroization 
+var authRoute = require('./routes/auth.js')(app,passport);
+
+// console.log("\n\n\n\nmodels:", (models.User? "User model exists":"User dont exist"))
+//load passport strategies
+require('./config/passport/passport.js')(passport,models.User);
+
+
+////////////////
+// END PASSPORT
+////////////////
 
 // Configure body parser for AJAX requests
 app.use(bodyParser.urlencoded({ extended: true }));
