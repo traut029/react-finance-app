@@ -18,7 +18,7 @@ var models=require("./models")
 // The order of the passport server lines is important - no step on snek 
 ////////////////////////////////////////////////////////////////////////////
 // Note that process.env.sessionsecret is a variable that I configured Heroku for to keep it out of github for security issues, otherwise it can be any random string. -Mark
-app.use(session({ secret: "test"})); // session secret
+app.use(session({ secret: 'shepsvacationphotos2357',resave: true, saveUninitialized:true})); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 

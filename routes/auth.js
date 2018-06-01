@@ -15,11 +15,10 @@ module.exports = function (app, passport) {
 
 
     app.post('/signup', passport.authenticate('local-signup', {
-        // successRedirect: '/catdog',
-        // failureRedirect: '/signup'
+        successRedirect: '/catdog',
+        failureRedirect: '/signup'
     }
     ));
-
 
     app.get('/dashboard', isLoggedIn, function (req, res) {
         res.send()
